@@ -6,4 +6,5 @@ export const ENV = {
     SAUCE_USERNAME: process.env.SAUCE_USERNAME || '',
     SAUCE_PASSWORD: process.env.SAUCE_PASSWORD || '',
     Inventory_URL: process.env.Inverntory_URL || '',
+    Cart_URL: process.env.Cart_URL || '',
 };

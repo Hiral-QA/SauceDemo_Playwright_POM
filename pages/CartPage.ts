@@ -14,7 +14,7 @@ export class CartPage {
     async verifyCartItemCount() {
         const cartItems = this.page.locator(CartLocators.cartItems);
         const count = await cartItems.count();
-        console.log("Cart Items Count is : " + count);
+        //console.log("Cart Items Count is : " + count);
     }
 
     async verifyCartLabel() {
@@ -56,7 +56,7 @@ export class CartPage {
             const price = await items.nth(i).locator('.inventory_item_price').textContent();
             const qty = await items.nth(i).locator('.cart_quantity').textContent();
 
-            console.log(`Item ${i + 1}:`, name, price, qty);
+            //console.log(`Item ${i + 1}:`, name, price, qty);
         }
     }
 }
